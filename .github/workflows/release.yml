@@ -5,10 +5,8 @@ env:
   IMAGE_NAME: yojigenserver/doublecommander
 
 on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   release:
